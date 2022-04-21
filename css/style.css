@@ -1,0 +1,213 @@
+:root {
+       --main-color: #ccc;
+}
+
+* {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+}
+
+body {
+       font-family: Arial, Helvetica, sans-serif;
+}
+
+body.dark {
+       background-color: #333;
+}
+
+.parent {
+       width: 1000px;
+       max-width: 100%;
+       margin: 15px auto 30px;
+       padding: 10px;
+       position: relative;
+}
+
+.parent .head {
+       font-weight: 500;
+       font-size: 50px;
+       margin-bottom: 25px;
+}
+
+body.dark .parent .head {
+       color: #fff;
+}
+
+.parent .validate {
+       width: 100%;
+       background-color: red;
+       color: #fff;
+       padding: 10px;
+       margin-bottom: 20px;
+       font-size: 18px;
+       display: none;
+}
+
+.parent form {
+       position: relative;
+}
+
+.parent form div {
+       margin-bottom: 20px;
+}
+
+.parent form div label {
+       margin-bottom: 15px;
+       display: block;
+       font-weight: 600;
+}
+
+body.dark .parent form div label {
+       color: #fff;
+}
+
+.parent form div input {
+       width: 100%;
+       padding: 10px;
+       border-radius: 3px;
+       border: 1px solid var(--main-color);
+}
+
+body.dark .parent form div input {
+       background-color: transparent;
+       color: #fff;
+}
+
+.parent form div input:focus {
+       outline: none;
+       border-color: #03a9f4;
+}
+
+.parent form .submit {
+       width: 100%;
+       padding: 12px;
+       background-color: #0000;
+       border: 1px solid var(--main-color);
+       border-radius: 3px;
+       text-transform: uppercase;
+       font-size: 12px;
+       font-weight: bold;
+       color: #666;
+       cursor: pointer;
+}
+
+body.dark .parent form .submit {
+       color: #fff;
+}
+
+.parent form .submit:hover {
+       border-color: #777;
+}
+
+.parent .mode {
+       width: 52px;
+       height: 28px;
+       background-color: #000;
+       position: absolute;
+
+       right: 10px;
+       border-radius: 20px;
+       display: flex;
+       align-items: center;
+       transition: 0.3s;
+       cursor: pointer;
+}
+
+.parent .mode span {
+       width: 25px;
+       height: 25px;
+       background-color: #fff;
+       border-radius: 50%;
+       transition: 0.4s;
+       margin: 2px;
+}
+
+body.dark .mode span {
+       transform: translateX(100%);
+}
+
+.parent .main-local {
+       margin-bottom: 40px;
+}
+
+.parent .main-local .local {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 60px;
+       margin-bottom: 20px;
+       position: relative;
+}
+
+.parent .main-local .local span {
+       font-weight: bold;
+}
+
+.parent .main-local span::after {
+       content: '';
+       position: absolute;
+       width: 100%;
+       height: 1px;
+       background-color: var(--main-color);
+       bottom: -15px;
+       left: 0;
+}
+
+body.dark .parent .main-local span {
+       color: #fff;
+}
+
+.parent .local-submit {
+       padding: 13px 25px;
+       text-transform: uppercase;
+       background-color: #0000;
+       border: 1px solid var(--main-color);
+       border-radius: 3px;
+       display: flex;
+       margin-left: auto;
+       color: #666;
+       font-weight: bold;
+       font-size: 12px;
+       cursor: pointer;
+}
+
+body.dark .parent .local-submit {
+       color: #fff;
+}
+
+.parent .local-submit:hover {
+       color: #333;
+       border-color: #777;
+}
+
+.parent .main-local .local-storage div {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       margin-top: 60px;
+       margin-bottom: 20px;
+       position: relative;
+}
+
+.parent .main-local .local-storage div .del {
+       color: #2196f3;
+       font-weight: bold;
+       cursor: pointer;
+}
+
+.footer {
+       background-color: #ccc;
+       padding: 15px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+}
+
+body.dark .footer {
+       background-color: #222;
+}
+
+body.dark .footer p {
+       color: #fff;
+}
